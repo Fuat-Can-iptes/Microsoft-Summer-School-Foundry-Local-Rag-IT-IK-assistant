@@ -135,7 +135,7 @@ Bu işlem:
 
 ### Adım 5: Uygulamayı Başlatın
 
-Tebrikler! Tüm altyapı hazır.
+Bu adımla beraber  tüm altyapı hazır.
 
 Arka planda Foundry Local sunucusunu tetikleyecek ve görsel arayüzü açacak olan şu komutu çalıştırın:
 
