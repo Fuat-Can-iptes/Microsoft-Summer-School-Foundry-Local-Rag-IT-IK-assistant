@@ -1,0 +1,2 @@
+1-Yeni donanım veya özel yazılım lisansı talepleri
+Yeni donanım (ikinci monitör, klavye/mouse seti, RAM yükseltmesi vb.) veya özel yazılım lisansı (Cursor, PyCharm, Adobe vb.) talepleri, doğrudan "IT Servis Masası" portalı üzerinden bir bilet (ticket) oluşturularak yapılmalıdır. Tüm donanım ve ücretli lisans taleplerinin işleme alınabilmesi için çalışanın doğrudan bağlı olduğu departman yöneticisinin sistem üzerinden onay vermesi gerekmektedir. Arızalı donanım değişimleri ise onay gerektirmeden 24 saat içinde IT birimi tarafından birebir değişimle sağlanır.

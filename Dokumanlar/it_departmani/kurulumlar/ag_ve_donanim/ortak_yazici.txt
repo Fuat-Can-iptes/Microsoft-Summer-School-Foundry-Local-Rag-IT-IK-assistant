@@ -1,0 +1,3 @@
+1- Merkez ofisteki ortak yazıcıları bilgisayarınıza nasıl ekleyebilirsiniz ? 
+
+Merkez ofisteki ortak yazıcıları bilgisayarınıza eklemek için IP adresi kullanmalısınız. Başlat menüsünden yazıcı ekle diyerek 192.168.1.50 IP adresini girin ve standart TCP/IP portunu seçin.

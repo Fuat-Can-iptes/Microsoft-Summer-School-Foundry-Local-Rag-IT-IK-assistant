@@ -1,0 +1,2 @@
+1- Kurumsal VPN kurulumu nasııl yapılır ?
+Kurumsal VPN kurulumu için öncelikle IT portalından Cisco AnyConnect yazılımını indirin. Kurulum bittikten sonra sunucu adresi olarak vpn.sirket.com girilmeli ve mobil cihazınıza gelen SMS kodu ile doğrulama yapılmalıdır.

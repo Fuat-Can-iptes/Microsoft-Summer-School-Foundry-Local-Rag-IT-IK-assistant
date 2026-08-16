@@ -1,0 +1,5 @@
+Yıllık izin hakkı, deneme süresi dahil olmak üzere 1 yıllık hizmet süresini dolduran çalışanlar için geçerlidir. 
+- 1-5 yıl arası kıdem: 14 iş günü.
+- 5-15 yıl arası kıdem: 20 iş günü.
+- 15 yıl ve üzeri kıdem: 26 iş günü.
+İzin talepleri, en az 1 hafta öncesinden "İzin Yönetim Portalı (portal.sirket.local)" üzerinden yönetici onayına sunulmalıdır. İzinlerin en az 10 günü kesintisiz olacak şekilde planlanması tavsiye edilir. İzin bakiyeleri her ayın 1'inde otomatik olarak güncellenir.

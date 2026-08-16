@@ -1,0 +1,5 @@
+Bilgi Güvenliği, Şifreleme ve Antivirüs Prosedürleri
+
+1. Oltalama (Phishing) ve Harici Bellek (USB) Politikası
+Şirket e-posta adreslerine gelen ve şifre talep eden, aciliyet bildiren veya kaynağı belirsiz bağlantılar (linkler) içeren e-postalar kesinlikle açılmamalıdır. Bu mailler hiçbir yere tıklanmadan "guvenlik@sirket.local" adresine raporlanmalıdır. Ayrıca, veri sızıntısını (DLP) ve zararlı yazılım bulaşmasını engellemek amacıyla şirket bilgisayarlarına dışarıdan USB bellek, taşınabilir disk veya kişisel telefon takılması güvenlik politikaları gereği sistem tarafından otomatik olarak engellenmiştir.
+

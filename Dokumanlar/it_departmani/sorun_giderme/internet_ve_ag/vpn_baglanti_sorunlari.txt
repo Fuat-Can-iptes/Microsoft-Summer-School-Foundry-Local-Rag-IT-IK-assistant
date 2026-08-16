@@ -1,0 +1,32 @@
+VPN Bağlantı Sorunları ve Çözüm Rehberi
+
+Senaryo 1: VPN Bağlantısı Kurulamıyor (Connection Failed)
+Belirti: "VPN Connection Failed" veya "Authentication Timeout" hatası alınıyor.
+Adım 1: İnternet bağlantınızı başka bir web sitesine girerek test edin.
+Adım 2: Cisco AnyConnect (veya GlobalProtect) uygulamasını tamamen kapatıp tekrar açın.
+Adım 3: Sunucu adresinin vpn.sirket.com olduğundan emin olun.
+Adım 4: Hata devam ederse "ping 10.0.0.1" komutu ile iç ağ erişiminizi kontrol edin. Çözülmezse şirket ağında bir bakım çalışması olabilir, portal.sirket.local adresinden duyuruları kontrol edin.
+
+Senaryo 2: VPN Bağlı Ancak Şirket Uygulamalarına Erişilemiyor
+Belirti: VPN arayüzünde "Connected" (Bağlandı) yazmasına rağmen şirket içi portallara, ortak alanlara veya uygulamalara girilemiyor.
+Adım 1: VPN Split-Tunneling (Bölünmüş Tünelleme) hatası veya IP çakışması yaşanıyor olabilir. VPN bağlantısını kesip tekrar bağlanarak yeni bir IP bloğu almayı deneyin.
+Adım 2: DNS tarafında eski kayıtlar kalmış olabilir. Komut İstemi'ni (CMD) yönetici olarak çalıştırıp "ipconfig /flushdns" komutunu girerek DNS önbelleğini temizleyin.
+Adım 3: Uygulamaya isimle (URL) değil, doğrudan IP adresi ile girmeyi deneyin. Eğer IP adresi ile erişim sağlanabiliyorsa sorun DNS kaynaklıdır, durumu doğrudan IT Ağ (Network) ekibine bilet (ticket) açarak bildirin.
+
+Senaryo 3: MFA (Çok Faktörlü Doğrulama) Onay Ekranı Gelmiyor
+Belirti: Kullanıcı adı ve şifre girildikten sonra sistem bekliyor, ancak telefondaki Duo Mobile veya Microsoft Authenticator uygulamasına onay bildirimi (Push Notification) düşmüyor.
+Adım 1: Telefonunuzun internete (Wi-Fi veya Hücresel) bağlı olduğundan emin olun.
+Adım 2: Beklemek yerine kimlik doğrulama uygulamasını telefonunuzda manuel olarak açın, uygulamanın ürettiği 6 haneli geçici şifreyi (Token) VPN ekranındaki "Passcode" bölümüne manuel olarak girin.
+Adım 3: Bildirimler hala gelmiyorsa, IT Servis Masasını arayarak MFA cihaz kaydınızın (Device Enrollment) yeniden tetiklenmesini talep edin.
+
+Senaryo 4: Süresi Dolan Şifre Nedeniyle Bağlantı Reddi
+Belirti: Kullanıcı şifresinden emin olmasına rağmen "Invalid Username or Password" (Geçersiz Kullanıcı Adı veya Şifre) hatası alıyor.
+Adım 1: Kurumsal güvenlik politikası gereği Active Directory şifreleri her 90 günde bir yenilenmelidir. Şifrenizin süresi dolmuş olabilir.
+Adım 2: Şirket bilgisayarınızdan veya kişisel telefonunuzdan "sifre.sirket.com" (Self-Servis Şifre Sıfırlama Portalı) adresine gidin.
+Adım 3: SMS doğrulaması ile yeni şifrenizi belirleyin. Yeni şifre belirlendikten yaklaşık 5 dakika sonra VPN üzerinden tekrar giriş yapmayı deneyin.
+
+Senaryo 5: VPN Bağlıyken Aşırı Yavaşlık ve Kopmalar
+Belirti: VPN bağlantısı kuruluyor ancak Uzak Masaüstü (RDP) donuyor, dosya transferleri durma noktasına geliyor veya VoIP (Teams/Zoom) görüşmelerinde ses kesiliyor.
+Adım 1: Mümkünse evinizdeki Wi-Fi bağlantısı yerine modeme Ethernet kablosu ile bağlanarak kablosuz ağ frekans (Kanal çakışması) sorunlarını eleyin.
+Adım 2: Bilgisayarınızın arka planında çalışan kişisel bulut senkronizasyon (OneDrive, Google Drive) veya büyük boyutlu indirme işlemlerini durdurun.
+Adım 3: Eğer şirketinizin farklı bölgelerde VPN sunucuları varsa (Örn: TR-Gateway yerine EU-Gateway), lokasyon değiştirerek sunucu yoğunluğundan (Bandwidth darboğazı) kaçınmayı deneyin.

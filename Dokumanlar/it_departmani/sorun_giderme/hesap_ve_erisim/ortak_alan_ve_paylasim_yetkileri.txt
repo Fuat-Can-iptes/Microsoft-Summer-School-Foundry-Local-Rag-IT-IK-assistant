@@ -1,0 +1,3 @@
+Paylaşımlı Klasör Erişimi Reddediliyor Hatası (Access Denied)
+
+Kullanıcı, şirket ortak alanındaki (Shared Drive / Ortak Klasör) bir dosyaya veya klasöre girmeye çalıştığında "Erişim Reddedildi" veya "Yetkiniz Yok" hatası alıyorsa, öncelikle o klasörün sahipliğini (Folder Owner) elinde bulunduran departman yöneticisinden e-posta veya IT Servis Masası üzerinden yazılı onay alınmalıdır. Onay geldikten sonra, IT birimi ilgili kullanıcının Active Directory hesabını o klasöre ait okuma/yazma (Read/Write) güvenlik grubuna (Security Group) dahil eder. Yetki tanımlaması yapıldıktan sonra kuralın bilgisayara yansıması için kullanıcının bilgisayarını yeniden başlatması (veya oturumu kapatıp açması) gerekmektedir.

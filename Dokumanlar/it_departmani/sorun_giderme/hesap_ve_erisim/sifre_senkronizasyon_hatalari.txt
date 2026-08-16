@@ -1,0 +1,10 @@
+Şifre Senkronizasyon ve Active Directory Hataları Çözüm Rehberi
+
+1. Bilgisayar Domain'e (Etki Alanına) Katılamıyor
+Eğer bir bilgisayar şirket etki alanına (domain) katılamıyorsa, öncelikle cihazın şirket ağına (kablolu veya VPN üzerinden) fiziksel olarak erişebildiği kontrol edilmelidir. DNS ayarlarının doğrudan şirket Domain Controller (DC) sunucularını işaret ettiğinden emin olunmalıdır. Cihazın saat ve tarih ayarları DC sunucusuyla senkronize değilse güvenlik gerekçesiyle bağlantı reddedilir. Ağa katılım işlemi sırasında kullanıcı adının "DOMAIN\kullanici_adi" formatında girildiğinden emin olunmalıdır. Hata devam ederse, IT birimine ulaşılarak bilgisayar hesabının (Computer Object) AD üzerinde sıfırlanması (reset) talep edilmelidir.
+
+2. Active Directory Hesabı Kilitlendi (Account Locked Out)
+Active Directory hesap kilitlenmeleri, genellikle arka planda çalışan ve eski şifreyi denemeye devam eden uygulamalar (özellikle cep telefonlarındaki şirket e-postası veya şirket Wi-Fi ağı bağlantıları) yüzünden meydana gelir. Güvenlik politikası gereği şifre 5 kez üst üste yanlış girildiğinde hesap kilitlenir. Çözüm için: Kullanıcının tüm mobil cihazlarındaki (telefon, tablet) eski şifreleri hızlıca güncellemesi veya Wi-Fi ağını "Unut" yapması gerekir. Kilitlenme durumunda hesap 30 dakika içinde otomatik olarak açılır. Acil durumlarda IT Servis Masası aranarak hesabın manuel olarak açılması (Unlock) talep edilebilir.
+
+3. Outlook Sürekli Parola İstiyor
+Outlook'un sürekli şifre sorması ve giriş yapılamaması (Credential Loop) durumunda, öncelikle Windows arama çubuğuna "Kimlik Bilgisi Yöneticisi" (Credential Manager) yazılarak uygulama açılmalıdır. "Windows Kimlik Bilgileri" sekmesi altındaki tüm "MicrosoftOffice" ve "Outlook" ibareli eski şifre kayıtları manuel olarak silinmelidir. İşlem tamamlandıktan sonra bilgisayar yeniden başlatılır, Outlook tekrar açılarak güncel Active Directory şifresiyle giriş yapılır. Ayrıca sağ alt köşedeki "Parola Gerekiyor" uyarılarına tıklanarak, Duo veya Authenticator üzerinden bekleyen bir MFA (Çok Faktörlü Doğrulama) onayı olup olmadığı kontrol edilmelidir.

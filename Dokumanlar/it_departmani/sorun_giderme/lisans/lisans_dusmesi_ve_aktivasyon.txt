@@ -1,0 +1,3 @@
+Office ve Kurumsal Yazılım Lisans Doğrulama Hataları
+
+Uygulamalar açılırken "Office Lisansı Doğrulanmıyor", "Ürün Etkinleştirilemedi" veya "Lisans Süresi Doldu" hatası alınıyorsa, cihazın şirket ağına (veya VPN'e) bağlı olup olmadığı kontrol edilmelidir. Kurumsal lisanslar KMS (Key Management Service) sunucularından 180 günde bir otomatik doğrulama almalıdır. Cihaz ağa bağlıysa, Komut İstemi (CMD) yönetici olarak çalıştırılıp Office dizinine gidilerek "cscript ospp.vbs /act" komutu ile manuel tetikleme yapılabilir. Ayrıca, kullanıcının Microsoft 365 hesabından çıkış (Sign Out) yapıp güncel şirket parolasıyla tekrar giriş yapması, bulut tabanlı lisans senkronizasyon hatalarının %90'ını çözmektedir.

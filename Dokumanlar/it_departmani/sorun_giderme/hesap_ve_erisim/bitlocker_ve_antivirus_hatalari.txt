@@ -1,0 +1,7 @@
+1. BitLocker Kurtarma Anahtarı (Recovery Key) Sorunu
+Belirti: Bilgisayar açılışta mavi bir ekranda kilitleniyor ve "BitLocker Kurtarma Anahtarını Girin" uyarısı veriyor.
+Çözüm: Veri güvenliği politikası gereği cihazların diskleri BitLocker ile şifrelenmiştir ve bu anahtarlar lokalde saklanmaz. Kurtarma anahtarına erişmek için şirket telefonunuzdan veya başka bir cihazdan "myaccount.microsoft.com" adresine şirket kimlik bilgilerinizle giriş yapıp "Cihazlar" (Devices) sekmesinden ilgili bilgisayarın anahtarını görüntüleyebilirsiniz. Eğer portala erişemiyorsanız, doğrudan IT Servis Masasını telefonla arayarak sözlü kimlik doğrulamasından (Yönetici onayı veya İK teyidi) geçtikten sonra anahtarınızı talep edebilirsiniz.
+
+2. Kurumsal Antivirüs Güncellenmiyor / Pasif Durumda Sorunu
+Belirti: Bilgisayardaki kurumsal güvenlik yazılımı (CrowdStrike, Windows Defender ATP vb.) pasif görünüyor, hata veriyor veya "Definitions Out of Date" uyarısı çıkarıyor.
+Çözüm: Antivirüs yazılımları, güncellemeleri ve güvenlik politikalarını (Policy) doğrudan iç ağdaki yönetim sunucularından çeker. Cihazın ofis ağında veya VPN'e bağlı olduğundan emin olun. VPN bağlı olduğu halde güncelleme almıyorsa, sağ alt köşedeki antivirüs simgesine sağ tıklayarak "Check for Updates" (Güncellemeleri Denetle) seçeneği ile manuel tetikleme yapın. Hata devam ederse, cihazın şirket ağına erişimi güvenlik riski nedeniyle otomatik olarak kesilebilir; bu duruma gelmeden önce acilen IT Güvenlik (SecOps) ekibine bilet (ticket) açarak durumu bildirin.

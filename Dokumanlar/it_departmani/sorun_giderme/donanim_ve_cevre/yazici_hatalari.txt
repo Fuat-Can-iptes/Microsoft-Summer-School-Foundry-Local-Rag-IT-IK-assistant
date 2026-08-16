@@ -1,0 +1,14 @@
+Yazıcı Hataları ve Sorun Giderme Rehberi
+
+Senaryo 1: Kağıt Sıkışması (Paper Jam) veya Çıktı Vermeme
+Belirti: Yazıcı fiziksel olarak tepki vermiyor veya kağıt sıkışması hatası veriyor.
+Adım 1: Yazıcının üzerindeki ekran panelinde yer alan hata kodunu kontrol edin.
+Adım 2: Eğer "Kağıt Sıkışması" ise, cihazı kapatın ve arka kapaktaki kağıt yolunu nazikçe temizleyin.
+Adım 3: Yazıcıyı tekrar açın. Hata devam ederse IP adresini (Örn: 192.168.1.50) tarayıcıya girerek yazıcı durumunu "Ready" olarak doğrulayın.
+Not: Donanım fiziksel olarak hasarlıysa (kırık parça, yırtık merdane vb.) asla müdahale etmeyin, doğrudan destek@sirket.local adresine görsel ileterek bilet (ticket) oluşturun.
+
+Senaryo 2: Yazıcı Ağda Görünmüyor veya Çevrimdışı (Offline)
+Belirti: Kullanıcı belge yazdırmak istediğinde yazıcı listesinde cihazı bulamıyor veya yazıcı durumu "Çevrimdışı" olarak görünüyor.
+Adım 1: Yazıcının güç kablosunu ve Ethernet kablosunun takılı olduğunu, cihazın uyku modunda olmadığını teyit edin.
+Adım 2: Yazıcının ağ üzerindeki IP adresi DHCP tarafından değiştirilmiş olabilir. Print Server (Yazdırma Sunucusu) arayüzüne veya IT yönetim paneline girerek cihazın mevcut IP adresini kontrol edin.
+Adım 3: Kullanıcının bilgisayarında "Yazıcılar ve Tarayıcılar" menüsüne girerek eski çevrimdışı yazıcıyı kaldırın. Ardından güncel IP adresiyle veya Print Server ağ yolu üzerinden (Örn: \\PrintServer\IK_Yazicisi) yazıcıyı sisteme yeniden ekleyin.

@@ -1,0 +1,29 @@
+Konu: IT ve Bilgi Güvenliği Önemli İletişim Kanalları
+Kapsam: Şirket İçi Destek, Acil Durum ve Eskalasyon Matrisi
+
+1. Genel IT Destek (Helpdesk)
+Tüm standart bilgisayar, ağ, hesap ve yazılım (Outlook, Office, VPN) sorunları için ilk temas noktasıdır.
+- E-Posta: it.destek@sirketadi.com
+- Dahili Hat: 1100
+- Self-Servis Portal: helpdesk.sirketadi.local
+
+2. Donanım ve Çevre Birimleri Destek
+Fiziksel cihaz arızaları, yeni donanım talepleri, gömülü sistemler ve çevre birimi (yazıcı/tarayıcı) entegrasyonları için.
+- Sorumlu: Can İpteş
+- E-Posta: donanim@sirketadi.com
+- Dahili Hat: 1102
+
+3. Yazılım, Veritabanı ve Veri Operasyonları
+Kurumsal uygulamalar (ERP, CRM), ilişkisel veritabanı erişimleri, veri hatları (pipelines) ve yazılım içi mantıksal hatalar için.
+- Sorumlu Ekip: Bekir Şimşek,Abdullah Eta
+- E-Posta: yazilim.operasyon@sirketadi.com
+- Dahili Hat: 1103
+
+4. Bilgi Güvenliği (SOC) ve İhlal Bildirimi
+Phishing (oltalama) e-postaları, yetkisiz sistem erişimleri, kayıp/çalıntı cihazlar ve siber güvenlik alarmları için. Bu kanal 7/24 izlenmektedir.
+- Şüpheli Mail Yönlendirme: phishing@sirketadi.com
+- Acil Güvenlik Dahili Hat: 9111 (Kritik durumlar için)
+
+5. Felaket Kurtarma (DRP) ve Sistem Çökmesi
+Tüm şirketi etkileyen majör sunucu kesintileri, ağın tamamen çökmesi ve fidye yazılımı (Ransomware) krizleri için acil eskalasyon noktası.
+- E-Posta: drp.koordinasyon@sirketadi.com

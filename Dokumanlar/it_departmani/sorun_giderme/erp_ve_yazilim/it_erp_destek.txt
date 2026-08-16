@@ -1,0 +1,20 @@
+ERP Sistemleri (SAP / Oracle / Logo) Destek ve Sorun Giderme Prosedürleri
+
+1. Malzeme Kartı Açılmıyor / İş Emri Oluşmuyor:
+Sorun: Kullanıcı ERP ekranında malzeme kartı açamıyor veya üretim iş emri oluşturamıyorsa, genellikle eksik veri girişi veya departman onayı eksikliği söz konusudur.
+Çözüm/Cevap: Öncelikle zorunlu alanların (yıldızlı alanlar) eksiksiz doldurulduğunu kontrol et. Eğer doluysa, "Ana Veri (Master Data) Yönetimi" ekibine bilet (ticket) açılması gerekiyor.IT'nin doğrudan malzeme kartı açma yetkisi yoktur.
+
+2. Yetkim Yetersiz / Yetki Hatası (Authorization Error):
+Sorun: Kullanıcı belirli bir modüle veya ekrana girmeye çalıştığında yetki hatası alması.
+Çözüm/Cevap: Kurumsal güvenlik politikası gereği, IT departmanı yöneticiden yazılı onay (e-posta) almadan hiçbir kullanıcıya manuel ERP yetkisi tanımlayamaz. Kullanıcıya, bağlı bulunduğu departman yöneticisinden onay e-postası alarak IT Helpdesk üzerinden talep oluşturması gerek.
+
+3. Workflow (İş Akışı) Bekliyor:
+Sorun: Belgenin onay sürecinde takılı kalması.
+Çözüm/Cevap: Asistan, kullanıcıya belgenin hangi yöneticinin veya departmanın onayında beklediğini "Süreç Takip" ekranından kontrol etmesini söylemelidir. Sistemsel bir donma yoksa IT müdahale etmez.
+
+4. ERP Ekranı Donuyor veya Yavaş Çalışıyor:
+Sorun: SAP, Oracle veya Logo arayüzünde tepkisizlik.
+Çözüm: 
+ilk olarak aktif VPN bağlantısını ve ağ durumunu kontrol et 
+daha sonrasında görev yöneticisinden programı kapatıp (End Task) yeniden başlat. 
+Sorun devam ederse sunucu tarafında bir veritabanı kilidi (lock) olabileceği için IT'ye çağrı bırak.

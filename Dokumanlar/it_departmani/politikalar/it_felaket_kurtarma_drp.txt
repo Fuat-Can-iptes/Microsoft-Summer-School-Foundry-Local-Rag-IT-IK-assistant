@@ -1,0 +1,22 @@
+1. Felaket Kurtarma Planı Nedir?
+Şirketin ana sunucularının (siber saldırı, donanım arızası veya doğal afet sebebiyle) çökmesi durumunda, sistemlerin "Bulut Yedekleme (Azure)" üzerinden maksimum 4 saat (RTO) içinde tekrar ayağa kaldırılmasını sağlayan acil eylem planıdır.
+
+2. Acil Durum İletişimi:
+Sistem kesintilerinde personelin IT departmanını telefonla araması yasaktır; tüm güncellemeler SMS ve yedek iletişim kanalları üzerinden duyurulacaktır.
+
+3. Kriz Yönetim Ekibi ve Yetkilendirme:
+Sistem çökmesi durumunda kurtarma operasyonu sadece yetkili "Acil Müdahale Ekibi" tarafından yürütülür. Diğer yazılım ve sistem uzmanlarının, kendilerine özel bir görev atanmadıkça ana sunuculara müdahale etmesi veya yapılandırma değiştirmesi kesinlikle yasaktır.
+
+4. Veritabanı ve Kritik Veri Yedekleme (RPO - Recovery Point Objective):
+Özellikle SQL tabanlı yapılar veya Oracle gibi karmaşık ilişkisel veritabanı mimarileri üzerinde çalışan uygulamalar için maksimum veri kaybı toleransı (RPO) 1 saat olarak belirlenmiştir. Geliştirme ortamlarındaki veri tabanları felaket kurtarma önceliğine sahip değildir, öncelik her zaman canlı (production) ortamlardadır.
+
+5. Kesinti Seviyelendirmesi (Incident Tiers):
+
+Seviye 1 (Kritik): Şirketin tüm ana operasyonlarının durması. DRP derhal devreye alınır.
+
+Seviye 2 (Kısmi): Sadece belirli bir servisin (örneğin e-posta sunucularının) durması. DRP tam olarak başlatılmaz, sadece ilgili servisin yedeklemesi aktif edilir.
+
+Seviye 3 (Düşük): Bireysel donanım veya ofis içi ağ sorunları. Bu durumlar felaket olarak değerlendirilmez ve standart IT Destek bilet (ticket) sistemi üzerinden çözülür.
+
+6. Felaket Sonrası Raporlama (Kök Neden Analizi):
+Sistemler yeniden ayağa kaldırıldıktan sonraki 48 saat içerisinde IT Güvenlik ekibi tarafından "Kök Neden Analizi (Root Cause Analysis)" raporu hazırlanır ve yönetime sunulur. Personelin kesinti süresince girdiği geçici manuel kayıtlar, sistem açıldıktan sonra veri tabanına işlenmelidir.

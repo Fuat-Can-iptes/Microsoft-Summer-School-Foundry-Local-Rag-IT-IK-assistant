@@ -1,0 +1,7 @@
+Belirti: Şirket portallarına giriş yaparken "Invalid MFA Code" veya "Push Notification not received" hatası.
+Adım 1: Mobil cihazınızın saat ayarlarının "Otomatik" modda olduğundan emin olun (Tarih/Saat uyumsuzluğu MFA kodunu geçersiz kılar).
+Adım 2: Microsoft Authenticator uygulamasını açıp hesabınızı silmeden "Yenile" butonuna basın.
+Adım 3: Eğer 3 deneme sonunda başarısız olursanız, hesabınız güvenlik gerekçesiyle 15 dakika kilitlenir. Bu süre dolmadan tekrar denemeyin.
+
+Belirti:Active Directory hesabı kilitlendi:
+çözüm:Kullanıcı 3 kez yanlış şifre girdiyse hesap 15 dakika kilitlenir, Helpdesk üzerinden kilit açma (unlock) talebi iletilmelidir.

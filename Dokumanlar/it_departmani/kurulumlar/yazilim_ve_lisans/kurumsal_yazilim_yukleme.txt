@@ -1,0 +1,20 @@
+Kurumsal Yazılım Yükleme ve Güvenlik Politikası Rehberi
+
+1. Temel Güvenlik Kuralı ve Onaylı Kaynaklar
+Kurumsal standartlara uygun temel yazılımlar (Office 365, Cisco AnyConnect, CrowdStrike Antivirus, Teams) şirketin merkezi yazılım portalı olan "portal.sirket.local" üzerinden yönetilir. Bu portal dışındaki kaynaklardan (internetten manuel indirilen .exe/.msi dosyaları, crackli/lisanssız yazılımlar, torrent veya kişisel bulut depoları) kurulum yapılması kesinlikle yasaktır ve doğrudan "Güvenlik İhlali" (Security Breach) olarak kabul edilir. İzin verilen harici yazılımların tam listesi için IT departmanının onaylı "Yazılım Envanteri" dokümanına başvurulmalıdır.
+
+2. Yeni Bilgisayarlara Otomatik Yazılım Kurulumu (SCCM/Intune)
+Şirket envanterine yeni kayıt edilen veya sıfırlanan bilgisayarlara temel yazılımların kurulması için manuel bir işlem yapılmasına gerek yoktur. Cihaz ilk kez açılıp şirket ağına bağlandığında, Microsoft Intune / SCCM altyapısı üzerinden "Standart Kurumsal İmaj" paketleri arka planda otomatik olarak yüklenir. Kurulum sırasında cihazın yeniden başlatılması istenebilir.
+
+3. İsteğe Bağlı ve Departman Bazlı Yazılımların Kurulumu
+Standart imajda yer almayan, ancak kullanıcının departmanı gereği ihtiyaç duyduğu özel yazılımlar (IDE'ler, Tasarım Programları, SAP GUI vb.) "Company Portal" (Şirket Portalı) üzerinden self-servis olarak yüklenmelidir.
+- Windows Başlat menüsüne "Company Portal" yazarak uygulamayı açın.
+- "Uygulamalar" sekmesinden ihtiyacınız olan onaylı yazılımı bulun ve "Yükle" butonuna basın. (Bu işlem IT tarafından paketlendiği için yönetici şifresi gerektirmez).
+
+4. Kurulum Hataları ve Yetki Talepleri
+İhtiyaç duyulan yazılım portalda listelenmiyorsa veya kurulum aşamasında bir hata koduyla karşılaşılırsa, kesinlikle harici yollara başvurulmamalıdır. Hata ekranının tam ekran görüntüsü (Screenshot) alınarak doğrudan "destek@sirket.local" adresine e-posta iletilmeli ve IT Servis Masası'ndan yazılım yetki/kurulum talebi oluşturulmalıdır.
+
+5.Şirket cihazlarına IT onayı olmayan hiçbir yazılım (Torrent, oyun, vb.) kurulamaz. Bu kural mesai saatleri dışında veya hafta sonu kullanımlarında da geçerlidir.
+
+6. İstisnalar ve Kapsam:
+Şirket cihazlarına IT onayı olmayan hiçbir yazılım (Torrent, oyun, kişisel programlar vb.) kurulamaz. Bu kural cihazın şirket ağında olup olmamasından, mesai saati içinde veya dışında kullanılmasından bağımsızdır. "Kişisel kullanım", "özel dosya indirimi" veya "çalışma saatleri dışı kullanım" gibi gerekçeler, güvenlik politikasında hiçbir istisna oluşturmaz. IT tarafından onaylanmamış her türlü kurulum teşebbüsü, cihazın ağ erişiminin otomatik olarak kesilmesiyle sonuçlanan bir güvenlik ihlalidir.
